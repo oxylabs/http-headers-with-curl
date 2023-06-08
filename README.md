@@ -1,4 +1,4 @@
-# Sending Headers with cURL
+# Sending HTTP Headers With cURL
 
 [<img src="https://img.shields.io/static/v1?label=&message=Curl&color=brightgreen" />](https://github.com/topics/curl) [<img src="https://img.shields.io/static/v1?label=&message=Headers&color=important" />](https://github.com/topics/headers)
 
@@ -9,13 +9,13 @@
 - [Advanced Tips for Working with cURL Headers](#advanced-tips-for-working-with-curl-headers)
 - [FAQ](#faq)
 
-In this guide, we will discuss how to send and receive HTTP headers using cURL, a versatile command-line tool fortransferring data with URL syntax.
+In this guide, you’ll learn how to send and receive HTTP headers using cURL, a versatile command-line tool for transferring data with URL syntax.
 
-## Send HTTP headers
+## Sending HTTP headers
 
-HTTP headers consist of a name-value pair, separated by a colon (:). The name identifies the type of informationsent, while the value is the actual data sent.
+HTTP headers consist of a name-value pair, separated by a colon – :. The name identifies the type of information sent, while the value is the actual data.
 
-Some of the most common HTTP headers include the User-Agent, Content-Type, Accept, and Cache-Control.
+Some of the most common HTTP headers include User-Agent, Content-Type, Accept, and Cache-Control.
 
 - Host: example.com
 - user-agent: curl/7.87.0
@@ -23,51 +23,51 @@ Some of the most common HTTP headers include the User-Agent, Content-Type, Accep
 
 You can change the value of these headers when sending a request.
 
-To send HTTP headers with cURL, you can use the -H or --header option followed by the header name and value in theformat "Header-Name: value". Here's an example:
+To send HTTP headers with cURL, you can use the -H or --header option followed by the header name and value in the format "Header-Name: value".
 
 ```sh
 curl -H "User-Agent: MyCustomUserAgent" http://httpbin.org/headers
 ```
 
-In this example, we are sending a custom User-Agent header as "MyCustomUserAgent" when requesting the http://httpbin.org/headers page.
+In the example below, a custom User-Agent header is sent as "MyCustomUserAgent" when requesting the http://httpbin.org/headers page.
 
 ![Change the value of User-Agent](images/curl-useragent.png)
 
-The page http://httpbin.org/headers is meant for testing headers and it returns a JSON with all the headers itfound in the request. Ignore the X-Amzn header that this site uses internally.
+The http://httpbin.org/headers page is meant for testing as it returns a JSON file with all the headers it found in the request. Ignore the X-Amzn header that this site uses internally.
 
-## Send Custom HTTP Headers
+## Sending custom HTTP headers
 
-To send custom HTTP headers with cURL,use the -H option and provide the header name and value:
+To send custom HTTP headers with cURL, use the -H option and provide the header name and value.
 
 ```sh
 curl -H "Authorization: Bearer my-access-token" http://httpbin.org/headers
 ```
 
-## Send Multiple Headers
+## Sending multiple headers
 
-To send multiple headers with cURL,you can use the -H option multiple times in the same command:
+To send multiple headers with cURL,you can use the -H option multiple times in the same command.
 
 ```sh
 curl -H "User-Agent: MyCustomUserAgent" -H "Accept:application/json" http://httpbin.org/headers
 ```
 
-## Get/Show HTTP Headers
+## Get/show HTTP headers
 
-To view the response headers from aweb server, you can use the **-I** or **--head** option with cURL:
+To view the response headers from a web server, you can use the -I or --head option with cURL.
 
 ```sh
 curl -I http://httpbin.org/headers
 curl --head http://httpbin.org/headers
 ```
 
-You can also use the **-i** or **--include** option to show both the response headers and the content in theoutput. For example:
+You can also use the -i or --include option to show both the response headers and the content in the output.
 
 ```sh
 curl -i http://httpbin.org/headers
 curl --include http://httpbin.org/headers
 ```
 
-## Advanced Tips for Working with cURL Headers
+## Advanced tips for working with cURL headers
 
 ### Sending empty headers
 
@@ -100,31 +100,31 @@ curl -D headers.txt -o content.txt http://httpbin.org/headers
 
 ## FAQ
 
-### How do you add headers in cURL?
+### How to add headers in cURL?
 
 ```sh
 curl -H "User-Agent: MyCustomUserAgent" http://httpbin.org/headers
 ```
 
-### Does cURL automatically addheaders?
+### Does cURL automatically add headers?
 
-Yes, cURL automatically adds standardheaders, such as User-Agent, Accept, and Host, based on the request type and other options. You can override or add custom headers using the -H command.
+Yes, cURL automatically adds standard headers, such as User-Agent, Accept, and Host, based on the request type and other options. You can override or add custom headers using the -H command.
 
 ### How to check HTTP headers in cURL?
 
-To check the HTTP headers in cURL, usethe -I or --head option to retrieve only the headers without the actualcontent. For example:
+To check HTTP headers in cURL, use the -I or --head option to only retrieve headers without the actual content.
 
 ```sh
 curl -I http://httpbin.org/headers
 ```
 
-Alternatively, you can use the -i or--include option to show both the response headers and the content in theoutput. For example:
+Alternatively, you can use the -i or --include option to show both the response headers and content in the output.
 
 ```sh
 curl -i http://httpbin.org/headers
 ```
 
-### How can I remove a default headerin cURL?
+### How to remove a default headerin cURL?
 
 To remove a header that cURL adds bydefault, provide the header name followed by a colon without a value. Forexample, to remove the User-Agent header:
 

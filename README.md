@@ -124,9 +124,15 @@ Alternatively, you can use the -i or --include option to show both the response 
 curl -i http://httpbin.org/headers
 ```
 
+### Can to send empty headers with cURL?
+
+```sh
+curl -H "User-Agent;" http://httpbin.org/headers
+```
+
 ### How to remove a default headerin cURL?
 
-To remove a header that cURL adds bydefault, provide the header name followed by a colon without a value. Forexample, to remove the User-Agent header:
+To remove a header that cURL adds by default, provide the header name followed by a colon without a value. For example, to remove the User-Agent header:
 
 ```sh
 curl -H "User-Agent:" http://httpbin.org/headers

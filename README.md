@@ -2,11 +2,11 @@
 
 [<img src="https://img.shields.io/static/v1?label=&message=Curl&color=brightgreen" />](https://github.com/topics/curl) [<img src="https://img.shields.io/static/v1?label=&message=Headers&color=important" />](https://github.com/topics/headers)
 
-- [Send HTTP headers](#send-http-headers)
-- [Send Custom HTTP Headers](#send-custom-http-headers)
-- [Send Multiple Headers](#send-multiple-headers)
-- [Get/Show HTTP Headers](#getshow-http-headers)
-- [Advanced Tips for Working with cURL Headers](#advanced-tips-for-working-with-curl-headers)
+- [Sending HTTP headers](#sending-http-headers)
+- [Sending custom HTTP headers](#sending-custom-http-headers)
+- [Sending multiple headers](#sending-multiple-headers)
+- [Get/show HTTP headers](#getshow-http-headers)
+- [Advanced Tips for working with cURL headers](#advanced-tips-for-working-with-curl-headers)
 - [FAQ](#faq)
 
 In this guide, you’ll learn how to send and receive HTTP headers using cURL, a versatile command-line tool for transferring data with URL syntax.

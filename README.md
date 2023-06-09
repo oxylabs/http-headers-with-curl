@@ -6,7 +6,7 @@
 - [Sending custom HTTP headers](#sending-custom-http-headers)
 - [Sending multiple headers](#sending-multiple-headers)
 - [Get/show HTTP headers](#getshow-http-headers)
-- [Advanced Tips for working with cURL headers](#advanced-tips-for-working-with-curl-headers)
+- [Advanced tips for working with cURL headers](#advanced-tips-for-working-with-curl-headers)
 - [FAQ](#faq)
 
 In this guide, you’ll learn how to send and receive HTTP headers using cURL, a versatile command-line tool for transferring data with URL syntax.

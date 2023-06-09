@@ -137,5 +137,3 @@ To remove a header that cURL adds by default, provide the header name followed b
 ```sh
 curl -H "User-Agent:" http://httpbin.org/headers
 ```
-
-If you want to learn how to use cURLwith a proxy, [read this blog post](https://oxylabs.io/blog/curl-with-proxy).

@@ -124,7 +124,7 @@ Alternatively, you can use the -i or --include option to show both the response 
 curl -i http://httpbin.org/headers
 ```
 
-### Can to send empty headers with cURL?
+### How to send empty headers with cURL?
 
 ```sh
 curl -H "User-Agent;" http://httpbin.org/headers

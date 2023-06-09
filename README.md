@@ -17,6 +17,8 @@ HTTP headers consist of a name-value pair, separated by a colon – `:`. The nam
 
 Some of the most common HTTP headers include User-Agent, Content-Type, Accept, and Cache-Control.
 
+When you send an HTTP request with cURL, it sends the following headers by default:
+
 - `Host: example.com`
 - `user-agent: curl/7.87.0`
 - `accept: */*`
